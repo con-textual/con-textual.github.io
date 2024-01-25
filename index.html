@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="con-textual"/>
+  <meta property="og:description" content="ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="con-textual">
+  <meta name="twitter:description" content="ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ConTextual</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">-->
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+            <!-- Paper authors -->
+                <span class="author-block">
+                <span class="author-block">
+                  <span class="author-block">
+                    <a href="https://web.cs.ucla.edu/~rwadhawan7/" target="_blank">Rohan Wadhawan</a><sup>*</sup><sup>1</sup>,&nbsp;</span>
+                  <a href="https://sites.google.com/view/hbansal" target="_blank">Hritik Bansal</a><sup>*</sup><sup>1</sup>,&nbsp;</span>
+
+                <span class="author-block">
+                  <a href="https://web.cs.ucla.edu/~kwchang/" target="_blank">Kai-Wei Chang</a><sup>1</sup>,&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://vnpeng.net/" target="_blank">Nanyun Peng</a><sup>1</sup>&nbsp;</span>
+                </div>
+
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup> University of California Los Angeles&nbsp;&nbsp;</span>
+                  <span class="author-block"><sup>*</sup> Equal Contribution&nbsp;&nbsp;</span>
+                </div>
+
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2401.13311" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+               <!-- Github link -->
+                  <span class="link-block">
+                    <a href="#" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              <!-- HF Demo Link -->
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/spaces/hbXNov/owl-con-demo" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">&#x1F917;</p>
+                  </span>
+                  <span>HF Demo</span>
+                </a>
+              </span> -->
+
+                <!-- HuggingFace Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/ucla-contextual/contextual_all" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">&#x1F917;</p>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+                <!-- HuggingFace Link -->
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/videocon/videocon-model" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">&#x1F917;</p>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="publication-flipped">
+        <div class="content has-text-justified">
+            <p style="text-align:center;">
+               <img src="static/images/summary.gif"  style="width: 80%; height: 80%"/>
+               <br>
+            </p>
+        </div>
+      </div>
+    </div>
+    <h3 class="subtitle is-size-3-tablet has-text-left pb-">
+  </div><h3>
+</section> -->
+
+<!-- Paper abstract -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+              <div class="item">
+               <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+                Abstract
+              </h2>
+               <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+               <p>
+                Recent advancements in AI have led to the development of large multimodal models (LMMs) capable of processing complex tasks involving joint reasoning over text and visual content in the image (e.g., navigating maps in public places). This paper introduces ConTextual, a novel benchmark comprising instructions designed explicitly to evaluate LMMs' ability to perform context-sensitive text-rich visual reasoning. ConTextual emphasizes diverse real-world scenarios (e.g., time-reading, navigation, shopping and more) demanding a deeper understanding of the interactions between textual and visual elements. Our findings reveal a significant performance gap of 30.8% between the best-performing LMM, GPT-4V(ision), and human capabilities using human evaluation indicating substantial room for improvement in context-sensitive text-rich visual reasoning. Notably, while GPT-4V excelled in abstract categories like meme and quote interpretation, its overall performance still lagged behind humans. In addition to human evaluations, we also employed automatic evaluation metrics using GPT-4, uncovering similar trends in performance disparities. We also perform a fine-grained evaluation across diverse visual contexts and provide qualitative analysis which provides a robust framework for future advancements in the LMM design. 
+               </p>
+             </h3>
+           </div>
+        </div>
+  </div>
+</section>
+
+<!-- Begin Leaderboard -->
+<!-- <section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3" id="leaderboard">Leaderboard on testmini</h2>
+        <div class="content">
+          <p class="mt-3">Accuracy scores on the <b>val</b> subset (100 examples) of <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo">
+            <span class="mathvista">MathVista</span>.
+          </p>
+
+          <div id="testmini_leaderboard"><table class="js-sort-table" id="results" data-js-sort-table="true"><thead><tr>
+          <td class="js-sort-number" data-js-sort-colnum="0"><strong>#</strong></td>
+          <td class="js-sort" data-js-sort-colnum="1"><strong>Model</strong></td>
+          <td class="js-sort" data-js-sort-colnum="2"><strong>Method</strong></td>
+          <td class="js-sort" data-js-sort-colnum="3"><strong>Source</strong></td>
+          <td class="js-sort" data-js-sort-colnum="4"><strong>Date</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="5"><strong><u>ALL</u></strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="6"><strong>FQA</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="7"><strong>GPS</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="8"><strong>MWP</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="9"><strong>TQA</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="10"><strong>VQA</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="11"><strong>ALG</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="12"><strong>ARI</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="13"><strong>GEO</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="14"><strong>LOG</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="15"><strong>NUM</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="16"><strong>SCI</strong></td>
+          <td class="js-sort-number" data-js-sort-colnum="17"><strong>STA</strong></td>
+      </tr></thead><tbody><tr><td>-</td><td><b>Human Performance*</b></td><td>-</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>60.3</b></td><td>59.7</td><td>48.4</td><td>73.0</td><td>63.2</td><td>55.9</td><td>50.9</td><td>59.2</td><td>51.4</td><td>40.7</td><td>53.8</td><td>64.9</td><td>63.9</td></tr><tr><td>1</td><td><b class="best-score-text">InternLM-XComposer2-VL 🥇</b></td><td>LMM 🖼️</td><td><a href="https://github.com/InternLM/InternLM-XComposer" class="ext-link" style="font-size: 16px;">Link</a></td><td>2024-01-22</td><td><b class="best-score-text">57.6</b></td><td>55.0</td><td>63.0</td><td>73.7</td><td>56.3</td><td>39.7</td><td>56.6</td><td>52.4</td><td>62.3</td><td>8.1</td><td>42.4</td><td>59.0</td><td>64.1</td></tr><tr><td>2</td><td><b class="best-score-text">Gemini Ultra 🥈</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2312.11805" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-12-06</td><td><b class="best-score-text">53.0</b></td><td>49.1</td><td>56.2</td><td>53.8</td><td>69.0</td><td>40.2</td><td>58.4</td><td>45.9</td><td>55.6</td><td>21.6</td><td>38.9</td><td>62.3</td><td>59.5</td></tr><tr><td>3</td><td><b class="best-score-text">GPT-4V (Playground) 🥉</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-15</td><td><b class="best-score-text">49.9</b></td><td>43.1</td><td>50.5</td><td>57.5</td><td>65.2</td><td>38.0</td><td>53.0</td><td>49.0</td><td>51.0</td><td>21.6</td><td>20.1</td><td>63.1</td><td>55.8</td></tr><tr><td>4</td><td><b>Gemini Pro</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2312.11805" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-12-06</td><td><b>45.2</b></td><td>47.6</td><td>40.4</td><td>39.2</td><td>61.4</td><td>39.1</td><td>45.2</td><td>38.8</td><td>41.0</td><td>10.8</td><td>32.6</td><td>54.9</td><td>56.8</td></tr><tr><td>5</td><td><b>Qwen-VL-Plus</b></td><td>LMM 🖼️</td><td><a href="https://github.com/QwenLM/Qwen-VL" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-12-21</td><td><b>43.3</b></td><td>54.6</td><td>38.5</td><td>31.2</td><td>55.1</td><td>34.1</td><td>39.1</td><td>32.0</td><td>39.3</td><td>18.9</td><td>26.4</td><td>59.0</td><td>56.1</td></tr><tr><td>6</td><td><b>SPHINX-MoE</b></td><td>MoE 🤖</td><td><a href="https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX" class="ext-link" style="font-size: 16px;">Link</a></td><td>2024-01-12</td><td><b>42.3</b></td><td>49.8</td><td>31.2</td><td>42.5</td><td>46.8</td><td>39.7</td><td>31.7</td><td>41.6</td><td>30.5</td><td>16.2</td><td>27.1</td><td>50.8</td><td>50.8</td></tr><tr><td>7</td><td><b>SPHINX (V2)</b></td><td>LMM 🖼️</td><td><a href="https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-11-17</td><td><b>36.7</b></td><td>54.6</td><td>16.4</td><td>23.1</td><td>41.8</td><td>43.0</td><td>20.6</td><td>33.4</td><td>17.6</td><td>24.3</td><td>21.5</td><td>43.4</td><td>51.5</td></tr><tr><td>8</td><td><b>Multimodal Bard</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>34.8</b></td><td>26.0</td><td>47.1</td><td>29.6</td><td>48.7</td><td>26.8</td><td>46.5</td><td>28.6</td><td>47.8</td><td>13.5</td><td>14.9</td><td>47.5</td><td>33.0</td></tr><tr><td>9</td><td><b>PoT GPT-4 (Caption+OCR)</b></td><td>Tool 🛠️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>33.9</b></td><td>30.1</td><td>39.4</td><td>30.6</td><td>39.9</td><td>31.3</td><td>37.4</td><td>31.7</td><td>41.0</td><td>18.9</td><td>20.1</td><td>44.3</td><td>37.9</td></tr><tr><td>10</td><td><b>CoT Claude (Caption+OCR)</b></td><td>Tool 🛠️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>33.2</b></td><td>27.5</td><td>29.3</td><td>36.0</td><td>49.4</td><td>29.1</td><td>31.0</td><td>32.9</td><td>31.0</td><td>16.2</td><td>17.4</td><td>50.8</td><td>37.2</td></tr><tr><td>11</td><td><b>CoT GPT4 (Caption+OCR)</b></td><td>Tool 🛠️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>33.2</b></td><td>27.9</td><td>31.7</td><td>31.2</td><td>51.9</td><td>28.5</td><td>33.5</td><td>30.9</td><td>32.2</td><td>13.5</td><td>12.5</td><td>58.2</td><td>37.9</td></tr><tr><td>12</td><td><b>CoT ChatGPT (Caption+OCR)</b></td><td>Tool 🛠️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>33.2</b></td><td>26.0</td><td>31.7</td><td>35.5</td><td>48.1</td><td>30.2</td><td>32.4</td><td>32.3</td><td>33.0</td><td>16.2</td><td>17.4</td><td>54.9</td><td>36.2</td></tr><tr><td>13</td><td><b>Gemini Nano 2</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2312.11805" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-12-06</td><td><b>30.6</b></td><td>28.6</td><td>23.6</td><td>30.6</td><td>41.8</td><td>31.8</td><td>27.1</td><td>29.8</td><td>26.8</td><td>10.8</td><td>20.8</td><td>40.2</td><td>33.5</td></tr><tr><td>14</td><td><b>SPHINX (V1)</b></td><td>LMM 🖼️</td><td><a href="https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-11-09</td><td><b>27.5</b></td><td>23.4</td><td>23.1</td><td>21.5</td><td>39.9</td><td>34.1</td><td>25.6</td><td>28.1</td><td>23.4</td><td>16.2</td><td>17.4</td><td>40.2</td><td>23.6</td></tr><tr><td>15</td><td><b>Gemini Nano 1</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2312.11805" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-12-06</td><td><b>27.3</b></td><td>30.9</td><td>21.6</td><td>23.7</td><td>29.1</td><td>30.7</td><td>23.8</td><td>25.5</td><td>21.3</td><td>13.5</td><td>20.8</td><td>27.9</td><td>30.9</td></tr><tr><td>16</td><td><b>PoT ChatGPT (Caption+OCR)</b></td><td>Tool 🛠️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>26.8</b></td><td>24.5</td><td>26.4</td><td>23.7</td><td>33.5</td><td>27.9</td><td>27.8</td><td>26.1</td><td>28.0</td><td>18.9</td><td>13.2</td><td>33.6</td><td>29.9</td></tr><tr><td>17</td><td><b>LLaVA (LLaMA-2-13B)</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>26.1</b></td><td>26.8</td><td>29.3</td><td>16.1</td><td>32.3</td><td>26.3</td><td>27.3</td><td>20.1</td><td>28.8</td><td>24.3</td><td>18.3</td><td>37.3</td><td>25.1</td></tr><tr><td>18</td><td><b>InstructBLIP (Vicuna-7B)</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>25.3</b></td><td>23.1</td><td>20.7</td><td>18.3</td><td>32.3</td><td>35.2</td><td>21.8</td><td>27.1</td><td>20.7</td><td>18.9</td><td>20.4</td><td>33.0</td><td>23.1</td></tr><tr><td>19</td><td><b>LLaVAR</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>25.2</b></td><td>21.9</td><td>25.0</td><td>16.7</td><td>34.8</td><td>30.7</td><td>24.2</td><td>22.1</td><td>23.0</td><td>13.5</td><td>15.3</td><td>42.6</td><td>21.9</td></tr><tr><td>20</td><td><b>LLaMA-Adapter-V2 (7B)</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>23.9</b></td><td>21.2</td><td>25.5</td><td>11.3</td><td>32.3</td><td>31.8</td><td>26.3</td><td>20.4</td><td>24.3</td><td>24.3</td><td>13.9</td><td>29.5</td><td>18.3</td></tr><tr><td>21</td><td><b>miniGPT4 (LLaMA-2-7B)</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>23.1</b></td><td>18.6</td><td>26.0</td><td>13.4</td><td>30.4</td><td>30.2</td><td>28.1</td><td>21.0</td><td>24.7</td><td>16.2</td><td>16.7</td><td>25.4</td><td>17.9</td></tr><tr><td>22</td><td><b>mPLUG-Owl (LLaMA-7B)</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>22.2</b></td><td>22.7</td><td>23.6</td><td>10.2</td><td>27.2</td><td>27.9</td><td>23.6</td><td>19.2</td><td>23.9</td><td>13.5</td><td>12.7</td><td>26.3</td><td>21.4</td></tr><tr><td>23</td><td><b>IDEFICS (9B-Instruct)</b></td><td>LMM 🖼️</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>19.8</b></td><td>21.6</td><td>21.1</td><td>6.5</td><td>25.9</td><td>24.0</td><td>22.1</td><td>15.0</td><td>19.8</td><td>18.9</td><td>9.9</td><td>24.6</td><td>18.1</td></tr><tr><td>24</td><td><b>Random Chance</b></td><td>-</td><td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td><td>2023-10-03</td><td><b>17.9</b></td><td>15.5</td><td>24.1</td><td>4.5</td><td>23.4</td><td>24.3</td><td>25.8</td><td>13.8</td><td>22.7</td><td>13.4</td><td>8.8</td><td>15.8</td><td>14.3</td></tr></tbody></table></div>
+
+        </div>
+       
+        <h2 class="title is-3" id="leaderboard_test">Leaderboard on test</h2>
+        <div class="content">
+          <p class="mt-3">Accuracy scores on the <b>test</b> subset (5,141 examples with <b>private</b> ground truth) of ConTextual.
+          </p>
+
+          <table class="js-sort-table" id="results" data-js-sort-table="true">
+            <thead><tr>
+                <td class="js-sort-number" data-js-sort-colnum="0"><strong>#</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="1"><strong>Model</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="2"><strong>Method</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="3"><strong>Source</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="4"><strong>Date</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="5"><strong><u>ALL</u></strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="6"><strong>Time</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="7"><strong>Shop.</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="8"><strong>Nav.</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="9"><strong>Abs.</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="11"><strong>App.</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="12"><strong>Web.</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="13"><strong>Info.</strong></td>
+                <td class="js-sort-number" data-js-sort-colnum="14"><strong>Misc. NS.</strong></td>
+            </tr></thead><tbody>
+            <tr>
+              <td>1</td>
+              <td><b class="best-score-text">InternLM-XComposer2-VL 🥇</b></td>
+              <td>LMM 🖼️</td>
+              <td><a href="https://github.com/InternLM/InternLM-XComposer" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td>2024-01-22</td>
+              <td><b class="best-score-text">57.93</b></td>
+              <td>53.9</td>
+              <td>56.4</td>
+              <td>77.1</td>
+              <td>58.4</td>
+              <td>54.8</td>
+              <td>57.6</td>
+              <td>58.0</td>
+              <td>16.5</td>                                 
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><b class="best-score-text">Qwen-VL-Plus 🥈</b></td>
+              <td>LMM 🖼️</td>
+              <td><a href="https://github.com/QwenLM/Qwen-VL" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td>2023-12-26</td>
+              <td><b class="best-score-text">44.33</b></td>
+              <td>53.9</td>
+              <td>56.4</td>
+              <td>77.1</td>
+              <td>58.4</td>
+              <td>54.8</td>
+              <td>57.6</td>
+              <td>58.0</td>
+              <td>16.5</td>                               
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><b class="best-score-text">SPHINX-MoE 🥉</b></td>
+              <td>MoE 🤖</td>
+              <td><a href="https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td>2024-01-13</td>
+              <td><b class="best-score-text">42.68</b></td>
+              <td>53.9</td>
+              <td>56.4</td>
+              <td>77.1</td>
+              <td>58.4</td>
+              <td>54.8</td>
+              <td>57.6</td>
+              <td>58.0</td>
+              <td>16.5</td>                           
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><b class="">PoT GPT-4 (Caption+OCR)</b></td>
+              <td>Tool 🛠️</td>
+              <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td>2023-10-03</td>
+              <td><b class="">31.74</b></td>
+              <td>53.9</td>
+              <td>56.4</td>
+              <td>77.1</td>
+              <td>43.2</td>
+              <td>54.8</td>
+              <td>57.6</td>
+              <td>58.0</td>
+              <td>16.5</td>                                  
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><b>CoT GPT4 (Caption+OCR)</b></td>
+              <td>Tool 🛠️</td>
+              <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td>2023-10-03</td>
+              <td><b>30.50</b></td>
+              <td>53.9</td>
+              <td>77.1</td>
+              <td>58.4</td>
+              <td>43.2</td>
+              <td>54.8</td>
+              <td>57.6</td>
+              <td>58.0</td>
+              <td>16.5</td>                                
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><b>LLaVA (LLaMA-2-13B)</b></td>
+              <td>LMM 🖼️</td>
+              <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>
+              <td>2023-10-03</td>
+              <td><b>25.40</b></td>
+              <td>22.9</td>
+              <td>24.6</td>
+              <td>18.1</td>
+              <td>35.8</td>
+              <td>29.7</td>
+              <td>26.9</td>
+              <td>22.5</td>
+              <td>24.4</td>
+              <td>19.1</td>
+              <td>19.1</td>
+              <td>34.7</td>
+              <td>21.6</td>                                 
+            </tr>                                              
+        </tbody></table>
+
+          <b>Human Performance*:</b> Average human performance from AMT annotators who have high school diplomas or above.
+          <br>
+          <b>Method types:</b> <b>LMM 🖼️:</b> Large Multimodal Model, <b>LLM 🕶️:</b> Augmented Large Language Model.
+          <br>
+          <b>Visual Scenarios:</b> 
+          <b>Time:</b> Time,
+          <b>Shop:</b> Shopping,
+          <b>Nav:</b> Navigation,
+          <b>Abs:</b> Abstract,
+          <b>App:</b> Application Usage,
+          <b>Web:</b> Web Usage,
+          <b>Info:</b> Infographic,
+          <b>Misc NS:</b> Miscellaneous Natural Scenes,
+          <br>
+          <div>
+          <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:rwadhawan7@g.ucla.edu">this email</a> with your result json files.</p>
+          <p>🚨 For more submission details, please refer to <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-leaderboard-">this link</a> and <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-evaluations-on-mathvista">this link</a>.
+          </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section> -->
+<!-- End Leaderboard -->
+ 
+<!-- <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"> <span class="mathvista">MathVista</span>  -->
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+<div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Pipeline
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            Overview of our VideoCon Approach. We propose “VideoCon”, a video-language dataset consisting of LLM-generated contrast captions for a wide range of misalignments. It is a scalable and active strategy to gather high-quality contrast data instead of collecting more web-scale data.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_9.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Temporally Extensive Dataset
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            Firstly, we make our dataset temporally-extensive by filtering the video-text pairs where the text has a high semantic similarity with one of the video frames. The presence of such examples don’t encourage strong video-centric learning.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_2.png"  style="width: 50%; height: 50%"/>
+         </p>
+         </h3>
+      </div>
+
+
+        <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           LLM-Assisted Dataset Collection
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+          We prompt LLM (PaLM-2) to generate contrast captions and natural language explanations.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_1.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+        <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Distribution of Misalignments
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            The dataset covers a wide range of misalignments. We present the distribution here.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_10.png"  style="width: 50%; height: 50%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Human-generated Data
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+          We collect human-generated contrast captions and natural language explanations to evaluate the models.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_3.png"  style="width: 50%; height: 50%"/>
+         </p>
+         </h3>
+      </div>
+
+
+      
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Finetuning
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+          We finetune a single generative video-text language model (mPLUG-Owl-Video) for the video-language entailment (whether text is grounded in the video) and natural language explanation generation task with their specific prompts. We refer to this model as Owl-Con.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_4.png"  style="width: 25%; height: 25%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+             Performance on Video-Language Entailment Task
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            Owl-Con outperforms all baseline models, achieving the top ROC-AUC score in video-language entailment. Specifically, it generalizes to unseen videos (sourced from a different distribution as VideoCon-LLM) and human-curated contrast captions. 
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+             <img src="static/images/example_5.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Performance on Natural Language Explanation Generation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+           <p>
+              We show that Owl-Con outperforms the baseline model by achieving high entailment score btw. the ground-truth NLE and generated NLE. In the future, we hope that our model could be used to provide dense feedback to the generative models (📽️->✍️ or ✍️->📽️). 
+           </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_6.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Zero-shot Text-to-Video Retrieval
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+           <p>
+            We evaluate the Owl-Con on zero-shot Text to Video Retrieval tasks (SSv2-Temporal and SSv2-Events). Our model achieves SOTA performance on these datasets, highlighting the usefulness of training with a high-quality VideoCon dataset.
+           </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_7.png"  style="width: 90%; height: 90%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+              Zero-shot Video Question Answering
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+           <p>
+              Finally, we also show that Owl-Con achieves SOTA performance on the zero-shot video question answering dataset (ATP-Hard) which requires high temporal and causal understanding of the video-text data.
+           </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/example_8.png"  style="width: 85%; height: 85%"/>
+         </p>
+         </h3>
+      </div>
+
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.16.2/gradio.js"></script>
+
+<!-- Start explorer embedding -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+       <h3 class="subtitle is-size-1-tablet has-text-weight-bold has-text-centered pr-4 pl-4 pt-3 pb-3">
+            Dataset Viewer
+        </h3>
+      <div class="columns is-centered has-text-centered">
+          <div class="publication-video">
+            <gradio-app src="https://ucla-contextual-contextual-all.hf.space/"></gradio-app>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- End explorer embedding -->
+
+
+<!-- End explorer embedding -->
+
+<!--<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.16.2/gradio.js"></script>-->
+<!-- Youtube video -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--          <div class="publication-video">-->
+<!--          <h3 class="subtitle is-size-4-tablet has-text-left">-->
+<!--               <p>-->
+<!--                   q2d's auto-generated dialogs enable query generation models to adapt and improve for specific dialog styles, creating labeled datasets for training and evaluation.-->
+<!--                   <br>T5 model predictions above/below the line show the impact of fine-tuning on MuSiQue dialogs.-->
+<!--               </p>-->
+<!--               <p style="text-align:center;">-->
+<!--                   <br><br>-->
+<!--                   <img src="static/images/q2d_5.png"  style="width: 60%; height: 60%"/>-->
+<!--               </p>-->
+<!--         </h3>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- End youtube video-->
+
+<!-- Youtube video -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h3 class="subtitle is-size-4-tablet has-background-info-light has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--      We collect <i>normal</i> (synthetic, not weird) and <i>natural</i> (non-synthetic, not weird) images to investigate the main challenge in WHOOPS!. BLIP2 model performs well on <i>non-weird</i> cases but struggles on weird ones, indicating that weirdness is the primary challenge, not synthesis.-->
+<!--      </h3>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--          <div class="publication-video">-->
+<!--            <iframe src="https://nlphuji-wmtis-explorer-identify.hf.space" frameborder="0" width="850" height="450"></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Paper</h2>-->
+<!--      <iframe  src="static/pdfs/WHOOPS_paper.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--End paper poster -->
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+<h2 class="title">BibTeX</h2>
+<pre><code>@misc{wadhawan2024contextual,
+  title={ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models}, 
+  author={Rohan Wadhawan and Hritik Bansal and Kai-Wei Chang and Nanyun Peng},
+  year={2024},
+  eprint={2401.13311},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}</code>
+</div>
+</section>
+<!--End BibTex citation -->
+
+<section>
+  <div class="columns is-centered has-text-centered">
+  <div class="section" id="org-banners" style="display: flex">
+  <img class="center-block org-banner" src="static/images/ucla.png" style="width:256px;height:100px;">
+  </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p style="color:gray;font-size:9.9px;">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+  </body>
+  </html>
