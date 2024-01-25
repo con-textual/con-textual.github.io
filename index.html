@@ -349,22 +349,22 @@
 <!-- <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"> <span class="mathvista">MathVista</span>  -->
 
 <!-- Image carousel -->
-<!-- <section class="hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
 
 <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Pipeline
+           Main Results
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-            Overview of our VideoCon Approach. We propose “VideoCon”, a video-language dataset consisting of LLM-generated contrast captions for a wide range of misalignments. It is a scalable and active strategy to gather high-quality contrast data instead of collecting more web-scale data.
+            Performance of GPT-4V, Gemini-Pro-Vision, ShareGPT-4V-7B, and Humans on ConTextual benchmark. Human evaluation and an automatic GPT-4 based evaluation of the response correctness. 
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/example_9.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/pull_figure1.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
@@ -375,11 +375,11 @@
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-            Firstly, we make our dataset temporally-extensive by filtering the video-text pairs where the text has a high semantic similarity with one of the video frames. The presence of such examples don’t encourage strong video-centric learning.
+            Performance of GPT-4V, Gemini-Pro-Vision, ShareGPT-4V-7B, and Humans on ConTextual benchmark. Fine-grained performance with variation in visual contexts using GPT-4 based evaluation.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/example_2.png"  style="width: 50%; height: 50%"/>
+           <img src="static/images/radar_context_full.png"  style="width: 50%; height: 50%"/>
          </p>
          </h3>
       </div>
@@ -387,122 +387,45 @@
 
         <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           LLM-Assisted Dataset Collection
+           Visual Scenario Examples
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-          We prompt LLM (PaLM-2) to generate contrast captions and natural language explanations.
+          A sample from each of the 8 visual scenarios in <strong>ConTextual</strong> benchmark.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/example_1.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/teaser_figure.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
 
         <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Distribution of Misalignments
+           Data Statistics
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-            The dataset covers a wide range of misalignments. We present the distribution here.
+          Key stats such as the quantity of samples, images, instructions, responses, both overall and categorized, and the lengths of instructions and responses.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/example_10.png"  style="width: 50%; height: 50%"/>
+           <img src="static/images/table_key_stats.png"  style="width: 50%; height: 50%"/>
          </p>
          </h3>
       </div>
 
       <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Human-generated Data
+          Data Statistics
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-          We collect human-generated contrast captions and natural language explanations to evaluate the models.
+          Top 40 Most frequently occurring verbs (inner circle) and their top 4 direct nouns (outer circle) in the instructions.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/example_3.png"  style="width: 50%; height: 50%"/>
-         </p>
-         </h3>
-      </div>
-
-
-      
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Finetuning
-           </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
-          We finetune a single generative video-text language model (mPLUG-Owl-Video) for the video-language entailment (whether text is grounded in the video) and natural language explanation generation task with their specific prompts. We refer to this model as Owl-Con.
-         </p>
-         <p style="text-align:center;">
-           <br><br>
-           <img src="static/images/example_4.png"  style="width: 25%; height: 25%"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-             Performance on Video-Language Entailment Task
-           </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
-            Owl-Con outperforms all baseline models, achieving the top ROC-AUC score in video-language entailment. Specifically, it generalizes to unseen videos (sourced from a different distribution as VideoCon-LLM) and human-curated contrast captions. 
-         </p>
-         <p style="text-align:center;">
-           <br><br>
-             <img src="static/images/example_5.png"  style="width: 100%; height: 100%"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Performance on Natural Language Explanation Generation
-           </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-           <p>
-              We show that Owl-Con outperforms the baseline model by achieving high entailment score btw. the ground-truth NLE and generated NLE. In the future, we hope that our model could be used to provide dense feedback to the generative models (📽️->✍️ or ✍️->📽️). 
-           </p>
-         <p style="text-align:center;">
-           <br><br>
-           <img src="static/images/example_6.png"  style="width: 100%; height: 100%"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Zero-shot Text-to-Video Retrieval
-           </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-           <p>
-            We evaluate the Owl-Con on zero-shot Text to Video Retrieval tasks (SSv2-Temporal and SSv2-Events). Our model achieves SOTA performance on these datasets, highlighting the usefulness of training with a high-quality VideoCon dataset.
-           </p>
-         <p style="text-align:center;">
-           <br><br>
-           <img src="static/images/example_7.png"  style="width: 90%; height: 90%"/>
-         </p>
-         </h3>
-      </div>
-
-      <div class="item">
-        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-              Zero-shot Video Question Answering
-           </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-           <p>
-              Finally, we also show that Owl-Con achieves SOTA performance on the zero-shot video question answering dataset (ATP-Hard) which requires high temporal and causal understanding of the video-text data.
-           </p>
-         <p style="text-align:center;">
-           <br><br>
-           <img src="static/images/example_8.png"  style="width: 85%; height: 85%"/>
+           <img src="static/images/root_verb_noun.png"  style="width: 50%; height: 50%"/>
          </p>
          </h3>
       </div>
@@ -510,7 +433,7 @@
   </div>
 </div>
 </div>
-</section> -->
+</section>
 <!-- End image carousel -->
 
 <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.16.2/gradio.js"></script>
